@@ -1,12 +1,14 @@
 class UsersController < ApplicationController
 
-  def create
-    binding.pry
-    @user = User.new(user_params)
+  def homepage
+  
+  end
 
+  def create
+    @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to "/"
+      redirect_to :homepage
     else
       render :new
     end
