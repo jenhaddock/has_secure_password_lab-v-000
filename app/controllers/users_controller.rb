@@ -1,3 +1,5 @@
+require 'pry'
+
 class UsersController < ApplicationController
 
   def create
