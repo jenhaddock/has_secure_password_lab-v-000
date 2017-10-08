@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  def authenticate
+  def authenticate(password)
 
   end
 end
