@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   #before_action :require_login
 
   def create
-
+    User.new
   end
 
   def require_login
