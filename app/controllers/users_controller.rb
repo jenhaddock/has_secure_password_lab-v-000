@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   def require_login
-    redirect_to '/login' unless session.include? :name
+    redirect_to '/login' unless session.include? :user_id
   end
 
   def authenticate(password)
