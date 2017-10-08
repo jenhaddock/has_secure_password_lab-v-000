@@ -18,10 +18,6 @@ class UsersController < ApplicationController
     redirect_to '/login' unless session.include? :user_id
   end
 
-  def authenticate(password)
-
-  end
-
   private
 
   def user_params
